@@ -4,66 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Dashboard</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body>
     <aside>
         <div class="profile-info">
-            <img class="profile-image" src="https://avatars1.githubusercontent.com/u/13423027?s=460&u=e657c331681e06faf09212d82652b564cd06d051&v=4" alt="Student photo">
+            <img class="profile-image" aria-hidden="true" src="assets/images/zalmans_profile_image.jpeg" alt="Zalman Blau">
             <p class="student-name">Zalman Blau</p>
         </div>
         <nav aria-label="side menu">
             <ul>
                 <li class="active">
-                    <a href="">
-                        <img src="" alt="Go to Dashboard">
+                    <a href="#">
+                        <i class="fas fa-chart-line" aria-hidden="true"></i>
                         Dashboard
                     </a>
                 </li>
                 <li class="mobile-only">
-                    <a href="">
-                        <img src="" alt="Compose post">
+                    <a href="#">
+                        <i class="fas fa-edit" aria-hidden="true"></i>
                         Compose Post
                     </a>
                 </li>
                 <li>
-                    <a href="">
-                        <img src="" alt="Go to Course">
+                    <a href="#">
+                        <i class="fab fa-leanpub" aria-hidden="true"></i>
                         Course
                     </a>
                 </li>
                 <li>
-                    <a href="">
-                        <img src="" alt="To to Exam">
+                    <a href="#">
+                        <i class="fas fa-school" aria-hidden="true"></i>
                         Exam
                     </a>
                 </li>
                 <li>
-                    <a href="">
-                        <img src="" alt="Go to Q&A">
+                    <a href="#">
+                        <i class="fas fa-question-circle" aria-hidden="true"></i>
                         Q&A
                     </a>
                 </li>
                 <li>
-                    <a href="">
-                        <img src="" alt="Go to News">
+                    <a href="#">
+                        <i class="fas fa-broadcast-tower" aria-hidden="true"></i>
                         News
                     </a>
                 </li>
                 <li class="mobile-only">
-                    <a href="">
-                        <img src="" alt="Go to Activity">
+                    <a href="#">
+                        <i class="fas fa-bell" aria-hidden="true"></i>
                         Activity
                     </a>
                 </li>
                 <li class="mobile-only">
-                    <a href="">
-                        <img src="" alt="Go to Friends">
+                    <a href="#">
+                        <i class="fas fa-users" aria-hidden="true"></i>
                         Friends
                     </a>
                 </li>
                 <li class="mobile-only">
-                    <a href="">
-                        <img src="" alt="Logout">
+                    <a href="#">
+                        <i class="fas fa-sign-out-alt" aria-hidden="true"></i>
                         Logout
                     </a>
                 </li>
@@ -76,19 +78,19 @@
             <nav aria-label="secondary menu">
                 <ul>
                     <li>
-                        <a href="">
-                            <img src="" alt="Go to profile">
+                        <a href="#" aria-label="Go to profile">
+                            <i class="fas fa-user" aria-hidden="true"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            <img src="" alt="Go to messages">
+                        <a href="#" aria-label="Go to messages">
+                            <i class="fas fa-inbox" aria-hidden="true"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="#" aria-label="Go to notifications">
                             <span class="unread-number-notifications">2</span>
-                            <img src="" alt="Go to notfications">
+                            <i class="fas fa-bell" aria-hidden="true"></i>
                         </a>
                     </li>
                 </ul>
@@ -96,21 +98,23 @@
             <p class="first-initial">Z</p>
             <div class="search-box">
                 <input type="text" name="search" id="search" placeholder="Type for search">
-                <img src="" alt="Search icon">
+                <label for="search">
+                    <i class="fas fa-search"></i>
+                </label>
             </div>
         </div>
 
         <div class="profile-section">
             <div class="buttons">
-                <a href="">
-                    <img src="" alt="Compose Post">
+                <a href="#" aria-label="Compose post">
+                    <i class="fas fa-edit" aria-hidden="true"></i>
                 </a>
-                <a href="">
-                    <img src="" alt="Logout">
+                <a href="#" aria-label="Logout">
+                    <i class="fas fa-sign-out-alt" aria-hidden="true"></i>
                 </a>
             </div>
             <div class="profile-info">
-                <img class="profile-image" src="https://avatars1.githubusercontent.com/u/13423027?s=460&u=e657c331681e06faf09212d82652b564cd06d051&v=4" alt="Student photo">
+                <img class="profile-image" aria-hidden="true" src="assets/images/zalmans_profile_image.jpeg" alt="Zalman Blau">
                 <p class="student-name">Zalman Blau</p>
                 <div class="star-ratings">
                     <p class="visually_hidden">Student Rating: 3</p>
@@ -216,8 +220,8 @@
                 <ol>
                     <li>
                         <div class="comment-metric">
-                            <img src="" alt="Comment icon">
-                            <span class="quantity small">12</span>
+                            <i class="far fa-comment" aria-hidden="true"></i>
+                            <span class="quantity small" area-label="number of comments">12</span>
                         </div>
                         <a href="#">
                              How to make a good logo
@@ -225,8 +229,8 @@
                     </li>
                     <li>
                         <div class="comment-metric">
-                            <img src="" alt="Comment icon">
-                            <span class="quantity small">3</span>
+                            <i class="far fa-comment" aria-hidden="true"></i>
+                            <span class="quantity small" area-label="number of comments">3</span>
                         </div>
                         <a href="#">
                             What are the best mobile apps for buying, analyzing, and selling stocks
@@ -234,8 +238,8 @@
                     </li>
                     <li>
                         <div class="comment-metric">
-                            <img src="" alt="Comment icon">
-                            <span class="quantity small">67</span>
+                            <i class="far fa-comment" aria-hidden="true"></i>
+                            <span class="quantity small" area-label="number of comments">67</span>
                         </div>
                         <a href="#">
                             What's the difference between UI and UX
@@ -243,8 +247,8 @@
                     </li>
                     <li>
                         <div class="comment-metric">
-                            <img src="" alt="Comment icon">
-                            <span class="quantity small">0</span>
+                            <i class="far fa-comment" aria-hidden="true"></i>
+                            <span class="quantity small" area-label="number of comments">0</span>
                         </div>
                         <a href="#">
                             What logos include hidden messages
@@ -307,25 +311,25 @@
                 <ol>
                     <li>
                         <a href="#">
-                            <img src="" class="profile-image" alt="Friend's photo">
+                            <img aria-hidden="true" src="assets/images/successful-college-student-lg.png" class="profile-image" alt="Jason Maroz">
                             <span class="blue">Jason Maroz</span> Finished the course <span class="heavy">Basics for UX Designers</span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="" class="profile-image" alt="Friend's photo">
+                            <img src="assets/images/male-student-studying1-min.jpg" class="profile-image" alt="Mary Robinson">
                             <span class="blue">Mary Robinson</span> Asked question <span class="heavy">What is best grid for desktop web?</span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="" class="profile-image" alt="Friend's photo">
+                            <img aria-hidden="true" src="assets/images/bay-college.jpeg" class="profile-image" alt="Joe Namos">
                             <span class="blue">Joe Namos</span> Finished the exam <span class="heavy">Junior web designer</span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="" class="profile-image" alt="Friend's photo">
+                            <img aria-hidden="true" src="assets/images/227642-2119x1415-Stressed-student-preparing-for-exam.jpg" class="profile-image" alt="Friend's photo">
                             <span class="blue">Barack Jones</span> published post <span class="heavy">How to speed up your WordPress website</span>
                         </a>
                     </li>
