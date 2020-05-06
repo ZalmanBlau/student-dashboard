@@ -8,7 +8,7 @@
 <body>
     <aside>
         <div class="profile-info">
-            <img src="https://avatars1.githubusercontent.com/u/13423027?s=460&u=e657c331681e06faf09212d82652b564cd06d051&v=4" alt="Student photo">
+            <img class="profile-image" src="https://avatars1.githubusercontent.com/u/13423027?s=460&u=e657c331681e06faf09212d82652b564cd06d051&v=4" alt="Student photo">
             <p class="student-name">Zalman Blau</p>
         </div>
         <nav aria-label="side menu">
@@ -17,6 +17,12 @@
                     <a href="">
                         <img src="" alt="Go to Dashboard">
                         Dashboard
+                    </a>
+                </li>
+                <li class="mobile-only">
+                    <a href="">
+                        <img src="" alt="Compose post">
+                        Compose Post
                     </a>
                 </li>
                 <li>
@@ -55,12 +61,19 @@
                         Friends
                     </a>
                 </li>
+                <li class="mobile-only">
+                    <a href="">
+                        <img src="" alt="Logout">
+                        Logout
+                    </a>
+                </li>
             </ul>
         </nav>
     </aside>
+
     <div class="content">
-        <div class="top-bar">
-            <nav aria-label="secondery menu">
+        <div class="top-section">
+            <nav aria-label="secondary menu">
                 <ul>
                     <li>
                         <a href="">
@@ -86,6 +99,36 @@
                 <img src="" alt="Search icon">
             </div>
         </div>
+
+        <div class="profile-section">
+            <div class="buttons">
+                <a href="">
+                    <img src="" alt="Compose Post">
+                </a>
+                <a href="">
+                    <img src="" alt="Logout">
+                </a>
+            </div>
+            <div class="profile-info">
+                <img class="profile-image" src="https://avatars1.githubusercontent.com/u/13423027?s=460&u=e657c331681e06faf09212d82652b564cd06d051&v=4" alt="Student photo">
+                <p class="student-name">Zalman Blau</p>
+                <div class="star-ratings">
+                    <p class="visually_hidden">Student Rating: 3</p>
+                    <div class="star active"></div>
+                    <div class="star active"></div>
+                    <div class="star active"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                </div>
+                <p class="users-title">Student</p>
+                <a href="#">Learn More</a>
+                <div class="student-gpa">
+                    <img src="" alt="Medal icon">
+                    3.87
+                </div>
+            </div>
+        </div>
+
         <nav aria-label="main menu">
             <ul>
                 <li class="active">
@@ -125,6 +168,170 @@
                 </li>
             </ul>
         </nav>
+
+        <div class="main-grid">
+            <div class="card orange">
+                <div class="quantity large">12</div>
+                <div class="card-title">Done Course</div>
+            </div>
+            <div class="card">
+                <div class="quantity large">3</div>
+                <div class="card-title">Unfinished Course</div>
+            </div>
+            <div class="card purple">
+                <div class="quantity large">27</div>
+                <div class="card-title">Asking Questions</div>
+            </div>
+            <div class="card">
+                <div class="quantity large">7</div>
+                <div class="card-title">Answered Questions</div>
+            </div>
+            <div class="card green">
+                <div class="quantity large">19</div>
+                <div class="card-title">Following Exams</div>
+            </div>
+            <div class="card">
+                <div class="quantity large">88</div>
+                <div class="card-title">Done Exams</div>
+            </div>
+
+            <div class="card">
+                <ol>
+                    <li>
+                        <a href="#">Basics for UX designers</a> 
+                    </li>
+                    <li>
+                        <a href="#">10 steps to improve your wireframe</a>
+                    </li>
+                    <li>
+                        <a href="#">A Better Way to Request App Ratings</a>
+                    </li>
+                    <li>
+                        <a href="#">How to Speed Up your WordPress Website</a>
+                    </li>
+                </ol>
+                <a href="#" class="expand-list-button">Show more</a>
+            </div>
+            <div class="card">
+                <ol>
+                    <li>
+                        <div class="comment-metric">
+                            <img src="" alt="Comment icon">
+                            <span class="quantity small">12</span>
+                        </div>
+                        <a href="#">
+                             How to make a good logo
+                        </a>
+                    </li>
+                    <li>
+                        <div class="comment-metric">
+                            <img src="" alt="Comment icon">
+                            <span class="quantity small">3</span>
+                        </div>
+                        <a href="#">
+                            What are the best mobile apps for buying, analyzing, and selling stocks
+                        </a>
+                    </li>
+                    <li>
+                        <div class="comment-metric">
+                            <img src="" alt="Comment icon">
+                            <span class="quantity small">67</span>
+                        </div>
+                        <a href="#">
+                            What's the difference between UI and UX
+                        </a>
+                    </li>
+                    <li>
+                        <div class="comment-metric">
+                            <img src="" alt="Comment icon">
+                            <span class="quantity small">0</span>
+                        </div>
+                        <a href="#">
+                            What logos include hidden messages
+                        </a>
+                    </li>
+                </ol>
+                <a href="#" class="expand-list-button">Show more</a>
+            </div>
+            <div class="card">
+                <ol>
+                    <li>
+                        <div class="graph-bar">
+                            <span class="quantity small">72%</span>
+                        </div>
+                        <a href="">Junior web designer</a>
+                    </li>
+                    <li>
+                        <div class="graph-bar">
+                            <span class="quantity small">20%</span>
+                        </div>
+                        <a href="">Which is the best way to pass the PMP?</a>
+                    </li>
+                    <li>
+                        <div class="graph-bar">
+                            <span class="quantity small">35%</span>
+                        </div>
+                        <a href="">What are great examples of viral UI/UX?</a>
+                    </li>
+                    <li>
+                        <div class="graph-bar">
+                            <span class="quantity small">90%</span>
+                        </div>
+                        <a href="">Why is consistency important in design?</a>
+                    </li>
+                </ol>
+                <a href="#" class="expand-list-button">Show more</a>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Experience gained</div>
+                <div class="flex-container">
+                    <div class="graph-bar"></div>
+                    <div class="graph-bar"></div>
+                    <div class="graph-bar"></div>
+                    <div>
+                        <div class="quantity large">
+                            +142
+                        </div>
+                        <div class="small">
+                            Last Month
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">Experience per day</div>
+            </div>
+            <div class="card">
+                <div class="card-title">Friend Activity</div>
+                <ol>
+                    <li>
+                        <a href="#">
+                            <img src="" class="profile-image" alt="Friend's photo">
+                            <span class="blue">Jason Maroz</span> Finished the course <span class="heavy">Basics for UX Designers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="" class="profile-image" alt="Friend's photo">
+                            <span class="blue">Mary Robinson</span> Asked question <span class="heavy">What is best grid for desktop web?</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="" class="profile-image" alt="Friend's photo">
+                            <span class="blue">Joe Namos</span> Finished the exam <span class="heavy">Junior web designer</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="" class="profile-image" alt="Friend's photo">
+                            <span class="blue">Barack Jones</span> published post <span class="heavy">How to speed up your WordPress website</span>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
     </div>
 </body>
 </html>
