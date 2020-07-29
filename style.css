@@ -1,0 +1,713 @@
+/* start temp rules */
+
+img {
+    width: 100px
+}
+
+/* end temp rules */
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+   text-decoration: none; 
+   color: black;
+}
+
+a:active {
+    color: red;
+}
+
+.image-crop {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.profile-image {
+    vertical-align: middle;
+}
+
+.horizontal-menu li {
+    display: inline-block;
+    text-align: center;
+    margin-right: 3%;
+}
+
+li.side-menu-button {
+    display: none;
+}
+
+.side-menu-button:active {
+    color: red;
+}
+
+.side-menu-button label {
+    cursor: pointer;
+}
+
+.content-wrapper {
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    margin-left: 190px;
+}
+
+#side-menu-state {
+    display: none;
+}
+
+#side-menu-state:checked + aside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+#side-menu-state:checked ~ .content-wrapper header .top-section .side-menu-button label i {
+    display: none;
+}
+
+#side-menu-state:checked ~ .content-wrapper header .top-section .side-menu-button label {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+}
+
+aside {
+    height: 100%;
+    width: 190px;
+    margin: 0;
+    padding: 0;
+    margin-right: -100%;
+    background-color: #34495E;
+    position: relative;
+    z-index: 1000;
+}
+
+aside .profile-info {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+aside .profile-info, aside nav a {
+    font-size: 14px;
+}
+
+aside .image-crop {
+    width: 50px;
+    height: 50px;
+    border-radius: 35px;
+    margin-right: 5px;
+}
+
+aside .profile-image {
+    width: 50px;
+}
+
+aside .profile-name {
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+aside nav .icon {
+    width: 35px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+aside nav .menu-text {
+    vertical-align: middle;
+}
+
+aside nav ul {
+    padding: 20px 25px;
+}
+
+aside nav li {
+    padding: 3px 0px;
+}
+
+aside nav li .active {
+    background-color: black;
+}
+
+aside nav li a {
+    color: #8d9cab;
+}
+
+aside nav li a.active {
+    color: white;
+}
+
+/* float layout */
+
+.column {
+    float: left;
+}
+
+.row::after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+ }
+
+.mobile-only {
+    display: none;
+}
+
+/* header */
+header {
+    box-shadow: 0px 2px 1px #dadada;
+    margin-bottom: 2px;
+    overflow: auto;
+    min-height: 190px;
+}
+
+.top-section {
+    padding: 5px 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid gainsboro;
+    min-height: 41px;
+}
+
+.top-section .horizontal-menu {
+    width: 8em;
+    color: black;
+}
+
+.top-section .horizontal-menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.unread-number-notifications {
+    background-color: red;
+    color: white;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 15px;
+    font-size: 12px;
+    position: relative;
+    top: -8px;
+    left: -6px;
+}
+
+.top-section .first-initial {
+    font-size: 36px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.top-section .search-box {
+    width: 8em;
+}
+
+.search-box input {
+    border: 0;
+    outline: none;
+    width: 8em;
+}
+
+/* profile section */
+.profile-section {
+    padding: 0px 20px;    
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.profile-section .profile-content .profile-name {
+    font-size: 20px;
+}
+
+.profile-section .buttons {
+    float: right;
+}
+
+.profile-section .image-crop {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.profile-section .profile-image {
+    width: 100px;
+}
+
+.buttons a {
+    display: inline-block;
+    padding: 6px;
+    border: 2px solid gainsboro;
+    border-radius: 20px;
+    color: gainsboro;
+}
+
+.buttons a:hover {
+    background-color: #35ed35;
+    color: white;
+    border-color: white;
+}
+
+/* main menu */
+.main-menu {
+    margin-top: 25px;
+}
+
+/* main grid */
+.main-grid {
+    padding: 25px 25px 45px 25px;
+}
+
+.friend-activity .image-crop {
+    height: 35px;
+    width: 35px;
+    border-radius: 25px;
+    margin-right: 5px;
+}
+
+.friend-activity .profile-image {
+    width: 50px;
+}
+
+.experience-gained .graph-bar {
+    min-width: 50px;
+    max-width: 25%;
+}
+
+.experience-gained .bar {
+    height: 45px;
+}
+
+.stats {
+    font-size: 11px;
+}
+
+.stats .last-month-experience .quantity {
+    font-size: 36px;
+}
+
+.main-grid .card {
+    background-color: white;
+    max-width: 1000px;
+}
+
+.main-grid .card.gray-background {
+    background-color: #e6ecee;
+}
+
+.main-grid .card-toggles .card {
+    padding: 25px;
+} 
+
+.list {
+    padding: 0px;
+    padding-bottom: 12px;
+}
+
+.list ol {
+    padding-left: 0px;
+    margin-top: 0px;
+}
+
+.list li {
+    box-shadow: 0px 1px 2px #d8e2e5;
+    white-space: nowrap;
+}
+
+.list li, .friend-activity .card-title, .experience-gained {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.friend-activity .list li {
+    box-shadow: none;
+}
+
+
+.friend-activity .list li::after {
+    content: "";
+    border-bottom: 1px solid #d8e2e5;
+    display: block;
+}
+
+.friend-activity .card-title {
+    border-bottom: 1px solid #d8e2e5;
+}
+
+.card-title {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.list li .list-item-text {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 16px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 80%;
+}
+
+.list .expand-list-button {
+    margin: 0px 25px;
+}
+
+.list .expand-list-button .fa-angle-down {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.list li .comment-metric {
+    display: inline-block;
+    width: 45px;
+    vertical-align: middle;
+}
+
+.list li .comment-metric .fa-comment {
+    vertical-align: bottom;
+}
+
+.experience-gained .graph {
+    width: 35px;
+}
+
+/* utils */
+.orange {
+    color: orange;
+}
+
+.purple {
+    color: purple;
+}
+
+.green {
+    color: #19e718;
+}
+
+.gray {
+    color: #a29d9d;
+}
+
+.green-background {
+    background-color: #19e718;
+}
+
+.gray-background {
+    background-color: #e6ecee;
+}
+
+.large {
+    font-size: 28px;
+}
+
+.small {
+    font-size: 13px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.center-aligned {
+    text-align: center;
+    display: block;
+}
+
+.right-aligned {
+    text-align: right;
+    display: block;
+}
+
+/* graphs */
+.graph-bar {
+    text-align: center;
+    width: 33px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.bar {
+    height: 28px;
+    position: relative;
+}
+
+.bar-fill {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.bar-fill .quantity {
+    display: block;
+    margin-top: -1.2em;
+}
+
+@media(max-width: 859px){
+    aside {
+        display: none;
+    }
+
+    .content {
+        margin: 0;
+    }
+
+    aside nav .mobile-only {
+        display: list-item;
+    }
+
+    li.side-menu-button {
+        display: inline-block;
+    }
+}
+
+@media(max-width: 668px){
+    .main-menu {
+        display: none;
+    }
+
+    .profile-section .buttons {
+        display: none;
+    }
+}
+
+@media(max-width: 400px){
+    .main-grid {
+        padding: 25px 0px 45px 0px;
+    }
+
+    .top-section .first-initial {
+        display: none;
+    }
+}
+
+/* for browsers that support flex */
+@supports(display:flex) {
+    /* to be rearranged */
+    .profile-section .column, .top-section .column {
+        float: none;
+    }
+
+    .profile-section.row::after, .top-section.row::after {
+        content: none;
+    }
+    /*end of to be rearranged */
+
+    /* profile section */
+    .profile-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .profile-section .profile-info {
+        display: flex;
+        align-items: center;
+        min-width: 0; /* fixes issue with text forcing flex parent too wide */
+    }
+
+    .profile-section .buttons {
+        flex: 0 0 70px;
+    }
+
+    .profile-section .profile-info .image-crop {
+        flex: 0 0 100px;
+    }
+
+    .profile-section .profile-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 5em;
+        margin: 0 15px;
+        min-width: 0; /* fixes issue with text forcing flex parent too wide */
+    }
+
+    .profile-section .profile-content .profile-name {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .profile-content .users-title {
+        margin: 0;
+    }
+
+    .profile-content .name-and-rating-section p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .profile-content .name-and-rating-section {
+        display: flex;
+        justify-items: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .name-and-rating-section .profile-name {
+        margin-right: 10px;
+    }
+
+    /* top section */
+    .top-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .top-section .first-initial {
+        flex: 0 0 15%;
+    }
+    
+    .top-section .horizontal-menu ul {
+        display: flex;
+        width: 7em;
+        justify-content: space-between;
+    }
+
+    .top-section .search-box {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /* cards toggles */
+    .card-toggles {
+        display: flex;
+    }
+
+    .card-toggles .card {
+        flex: 1 1 100px;
+    }
+
+    /* experience gained */
+    .experience-gained .stats {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+/* for browsers that support grid */
+@supports(display:grid){
+    /*general page grid */
+    body.row::after {
+        content: none;
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: 190px 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "aside content";
+    }
+
+    aside {
+        grid-area: aside;
+    }
+
+    .content-wrapper {
+        grid-area: content;
+    }
+
+    .content {
+        margin: 0;
+    }
+
+    .column {
+        float: none;
+    }
+
+    /*for the main grid*/
+    .main-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(300px, 1fr));
+    }
+
+    .friend-activity {
+        grid-column-start: span 2;
+    }
+
+    .main-grid .card.experience-gained {
+        margin-right: -23px;
+    }
+
+    .main-grid.row::after {
+        content: none;
+    }
+
+    .main-grid > .card {
+        margin-right: 25px;
+        margin-bottom: 25px;
+    }
+
+    @media(max-width: 859px){
+        aside {
+            display: none;
+        }
+
+        body {
+            grid-template-areas: "content content";
+        }
+    }
+
+    @media(max-width: 1200px){
+        .main-grid {
+            grid-template-columns: repeat(2, minmax(300px, 1fr));
+        }
+
+        .main-grid .card.experience-gained {
+            margin-right: 0px;
+        }
+    }
+
+    @media(max-width: 695px){
+        .main-grid {
+            grid-template-columns: minmax(300px, 1fr);
+        }
+
+        .friend-activity {
+            grid-column-start: span 1;
+        }
+    }
+}
+
+/*for browsers that support css grid's gap property */
+@supports(grid-gap: 10px) or (gap: 10px){
+    .main-grid > .card {
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+
+    .main-grid, .main-grid .row {
+        grid-gap: 25px;
+        gap: 25px;
+    }
+}

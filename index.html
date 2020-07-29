@@ -6,334 +6,422 @@
     <title>Student Dashboard</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <aside>
-        <div class="profile-info">
-            <img class="profile-image" aria-hidden="true" src="assets/images/zalmans_profile_image.jpeg" alt="Zalman Blau">
-            <p class="student-name">Zalman Blau</p>
+<body class="row">
+    <input type="checkbox" id="side-menu-state">
+    <aside class="column">
+        <div class="profile-info green-background">
+            <div class="image-crop">
+                <img class="profile-image" aria-hidden="true" src="assets/images/zalmans_profile_image.jpeg" alt="Zalman Blau">
+            </div>
+            <span class="profile-name uppercase">Zalman Blau</span>
         </div>
-        <nav aria-label="side menu">
+        <nav class="uppercase" aria-label="side menu">
             <ul>
                 <li class="active">
                     <a href="#">
-                        <i class="fas fa-chart-line" aria-hidden="true"></i>
-                        Dashboard
+                        <i class="icon fas fa-chart-line" aria-hidden="true"></i>
+                        <span class="menu-text">Dashboard</span>
                     </a>
                 </li>
                 <li class="mobile-only">
                     <a href="#">
-                        <i class="fas fa-edit" aria-hidden="true"></i>
-                        Compose Post
+                        <i class="icon fas fa-edit" aria-hidden="true"></i>
+                        <span class="menu-text">Post</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fab fa-leanpub" aria-hidden="true"></i>
-                        Course
+                        <i class="icon fab fa-leanpub" aria-hidden="true"></i>
+                        <span class="menu-text">Course</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fas fa-school" aria-hidden="true"></i>
-                        Exam
+                        <i class="icon fas fa-school" aria-hidden="true"></i>
+                        <span class="menu-text">Exam</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fas fa-question-circle" aria-hidden="true"></i>
-                        Q&A
+                        <i class="icon fas fa-question-circle" aria-hidden="true"></i>
+                        <span class="menu-text">Q&A</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fas fa-broadcast-tower" aria-hidden="true"></i>
-                        News
+                        <i class="icon fas fa-broadcast-tower" aria-hidden="true"></i>
+                        <span class="menu-text">News</span>
                     </a>
                 </li>
                 <li class="mobile-only">
                     <a href="#">
-                        <i class="fas fa-bell" aria-hidden="true"></i>
-                        Activity
+                        <i class="icon fas fa-bell" aria-hidden="true"></i>
+                        <span class="menu-text">Activity</span>
                     </a>
                 </li>
                 <li class="mobile-only">
                     <a href="#">
-                        <i class="fas fa-users" aria-hidden="true"></i>
-                        Friends
+                        <i class="icon fas fa-users" aria-hidden="true"></i>
+                        <span class="menu-text">Friends</span>
                     </a>
                 </li>
                 <li class="mobile-only">
                     <a href="#">
-                        <i class="fas fa-sign-out-alt" aria-hidden="true"></i>
-                        Logout
+                        <i class="icon fas fa-sign-out-alt" aria-hidden="true"></i>
+                        <span class="menu-text">Logout</span>
                     </a>
                 </li>
             </ul>
         </nav>
     </aside>
 
-    <div class="content">
-        <div class="top-section">
-            <nav aria-label="secondary menu">
-                <ul>
-                    <li>
-                        <a href="#" aria-label="Go to profile">
-                            <i class="fas fa-user" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" aria-label="Go to messages">
-                            <i class="fas fa-inbox" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" aria-label="Go to notifications">
-                            <span class="unread-number-notifications">2</span>
-                            <i class="fas fa-bell" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <p class="first-initial">Z</p>
-            <div class="search-box">
-                <input type="text" name="search" id="search" placeholder="Type for search">
-                <label for="search">
-                    <i class="fas fa-search"></i>
-                </label>
-            </div>
-        </div>
-
-        <div class="profile-section">
-            <div class="buttons">
-                <a href="#" aria-label="Compose post">
-                    <i class="fas fa-edit" aria-hidden="true"></i>
-                </a>
-                <a href="#" aria-label="Logout">
-                    <i class="fas fa-sign-out-alt" aria-hidden="true"></i>
-                </a>
-            </div>
-            <div class="profile-info">
-                <img class="profile-image" aria-hidden="true" src="assets/images/zalmans_profile_image.jpeg" alt="Zalman Blau">
-                <p class="student-name">Zalman Blau</p>
-                <div class="star-ratings">
-                    <p class="visually_hidden">Student Rating: 3</p>
-                    <div class="star active"></div>
-                    <div class="star active"></div>
-                    <div class="star active"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                </div>
-                <p class="users-title">Student</p>
-                <a href="#">Learn More</a>
-                <div class="student-gpa">
-                    <img src="" alt="Medal icon">
-                    3.87
-                </div>
-            </div>
-        </div>
-
-        <nav aria-label="main menu">
-            <ul>
-                <li class="active">
-                    <a href="">
-                        Knowledge
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        Course
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        Exam
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        Q&A
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        News
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        Activity
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        Friends
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="main-grid">
-            <div class="card orange">
-                <div class="quantity large">12</div>
-                <div class="card-title">Done Course</div>
-            </div>
-            <div class="card">
-                <div class="quantity large">3</div>
-                <div class="card-title">Unfinished Course</div>
-            </div>
-            <div class="card purple">
-                <div class="quantity large">27</div>
-                <div class="card-title">Asking Questions</div>
-            </div>
-            <div class="card">
-                <div class="quantity large">7</div>
-                <div class="card-title">Answered Questions</div>
-            </div>
-            <div class="card green">
-                <div class="quantity large">19</div>
-                <div class="card-title">Following Exams</div>
-            </div>
-            <div class="card">
-                <div class="quantity large">88</div>
-                <div class="card-title">Done Exams</div>
-            </div>
-
-            <div class="card">
-                <ol>
-                    <li>
-                        <a href="#">Basics for UX designers</a> 
-                    </li>
-                    <li>
-                        <a href="#">10 steps to improve your wireframe</a>
-                    </li>
-                    <li>
-                        <a href="#">A Better Way to Request App Ratings</a>
-                    </li>
-                    <li>
-                        <a href="#">How to Speed Up your WordPress Website</a>
-                    </li>
-                </ol>
-                <a href="#" class="expand-list-button">Show more</a>
-            </div>
-            <div class="card">
-                <ol>
-                    <li>
-                        <div class="comment-metric">
-                            <i class="far fa-comment" aria-hidden="true"></i>
-                            <span class="quantity small" area-label="number of comments">12</span>
-                        </div>
-                        <a href="#">
-                             How to make a good logo
-                        </a>
-                    </li>
-                    <li>
-                        <div class="comment-metric">
-                            <i class="far fa-comment" aria-hidden="true"></i>
-                            <span class="quantity small" area-label="number of comments">3</span>
-                        </div>
-                        <a href="#">
-                            What are the best mobile apps for buying, analyzing, and selling stocks
-                        </a>
-                    </li>
-                    <li>
-                        <div class="comment-metric">
-                            <i class="far fa-comment" aria-hidden="true"></i>
-                            <span class="quantity small" area-label="number of comments">67</span>
-                        </div>
-                        <a href="#">
-                            What's the difference between UI and UX
-                        </a>
-                    </li>
-                    <li>
-                        <div class="comment-metric">
-                            <i class="far fa-comment" aria-hidden="true"></i>
-                            <span class="quantity small" area-label="number of comments">0</span>
-                        </div>
-                        <a href="#">
-                            What logos include hidden messages
-                        </a>
-                    </li>
-                </ol>
-                <a href="#" class="expand-list-button">Show more</a>
-            </div>
-            <div class="card">
-                <ol>
-                    <li>
-                        <div class="graph-bar">
-                            <span class="quantity small">72%</span>
-                        </div>
-                        <a href="">Junior web designer</a>
-                    </li>
-                    <li>
-                        <div class="graph-bar">
-                            <span class="quantity small">20%</span>
-                        </div>
-                        <a href="">Which is the best way to pass the PMP?</a>
-                    </li>
-                    <li>
-                        <div class="graph-bar">
-                            <span class="quantity small">35%</span>
-                        </div>
-                        <a href="">What are great examples of viral UI/UX?</a>
-                    </li>
-                    <li>
-                        <div class="graph-bar">
-                            <span class="quantity small">90%</span>
-                        </div>
-                        <a href="">Why is consistency important in design?</a>
-                    </li>
-                </ol>
-                <a href="#" class="expand-list-button">Show more</a>
-            </div>
-
-            <div class="card">
-                <div class="card-title">Experience gained</div>
-                <div class="flex-container">
-                    <div class="graph-bar"></div>
-                    <div class="graph-bar"></div>
-                    <div class="graph-bar"></div>
-                    <div>
-                        <div class="quantity large">
-                            +142
-                        </div>
-                        <div class="small">
-                            Last Month
-                        </div>
+    <div class="content-wrapper column">
+        <div class="content">
+            <header>
+                <div class="top-section row">
+                    <nav class="horizontal-menu column" aria-label="secondary menu">
+                        <ul>
+                            <li class="side-menu-button">
+                                <label for="side-menu-state" aria-label="Open menu">
+                                    <i class="fa fa-bars" aria-hidden="true"></i>
+                                </label>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Go to profile">
+                                    <i class="icon fas fa-user" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Go to messages">
+                                    <i class="icon fas fa-inbox" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Go to notifications">
+                                    <i class="icon fas fa-bell" aria-hidden="true"></i>
+                                    <span class="unread-number-notifications">2</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="first-initial column">Z</div>
+                    <div class="search-box column">
+                        <input type="text" name="search" id="search" placeholder="Type for search">
+                        <label for="search">
+                            <i class="icon fas fa-search"></i>
+                        </label>
                     </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-title">Experience per day</div>
-            </div>
-            <div class="card">
-                <div class="card-title">Friend Activity</div>
-                <ol>
-                    <li>
-                        <a href="#">
-                            <img aria-hidden="true" src="assets/images/successful-college-student-lg.png" class="profile-image" alt="Jason Maroz">
-                            <span class="blue">Jason Maroz</span> Finished the course <span class="heavy">Basics for UX Designers</span>
+    
+                <div class="profile-section row">
+                    <div class="profile-info column">
+                        <div class="image-crop column">
+                            <img class="profile-image" aria-hidden="true" src="assets/images/zalmans_profile_image.jpeg" alt="Zalman Blau">
+                        </div>
+                        <div class="profile-content">
+                            <div class="name-and-rating-section">
+                                <p class="profile-name bold uppercase">Zalman Blau</p>
+                                <div class="star-ratings">
+                                    <p class="visually_hidden">Student Rating: 3</p>
+                                    <div class="star active"></div>
+                                    <div class="star active"></div>
+                                    <div class="star active"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                </div>
+                            </div>
+                            <p class="users-title">Student &middot; <a href="#">Learn More</a></p>
+                            
+                            <div class="student-gpa" aria-label="student gpa">
+                                <i class="icon fas fa-medal" aria-hidden="true"></i>
+                                3.87
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons column">
+                        <a href="#" aria-label="Post">
+                            <i class="icon fas fa-edit" aria-hidden="true"></i>
                         </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="assets/images/male-student-studying1-min.jpg" class="profile-image" alt="Mary Robinson">
-                            <span class="blue">Mary Robinson</span> Asked question <span class="heavy">What is best grid for desktop web?</span>
+                        <a href="#" aria-label="Logout">
+                            <i class="icon fas fa-sign-out-alt" aria-hidden="true"></i>
                         </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img aria-hidden="true" src="assets/images/bay-college.jpeg" class="profile-image" alt="Joe Namos">
-                            <span class="blue">Joe Namos</span> Finished the exam <span class="heavy">Junior web designer</span>
+                    </div>
+                </div>
+    
+                <nav class="horizontal-menu main-menu bold uppercase" aria-label="main menu">
+                    <ul>
+                        <li class="active">
+                            <a href="" class="menu-text">
+                                Knowledge
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="menu-text">
+                                Course
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="menu-text">
+                                Exam
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="menu-text">
+                                Q&A
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="menu-text">
+                                News
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="menu-text">
+                                Activity
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="menu-text">
+                                Friends
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="main-grid row gray-background">
+                <div class="card">
+                    <div class="card-toggles">
+                        <div class="card orange center-aligned">
+                            <div class="quantity large bold">12</div>
+                            <div class="card-title">Done Course</div>
+                        </div>
+                        <div class="card gray-background center-aligned">
+                            <div class="quantity large bold">3</div>
+                            <div class="card-title">Unfinished Course</div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <ol>
+                            <li>
+                                <a href="#" class="list-item-text">Basics for UX designers</a> 
+                            </li>
+                            <li>
+                                <a href="#" class="list-item-text">10 steps to improve your wireframe</a>
+                            </li>
+                            <li>
+                                <a href="#" class="list-item-text">A Better Way to Request App Ratings</a>
+                            </li>
+                            <li>
+                                <a href="#" class="list-item-text">How to Speed Up your WordPress Website</a>
+                            </li>
+                        </ol>
+                        <a href="#" class="expand-list-button right-aligned bold small">
+                            Show more 
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
                         </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img aria-hidden="true" src="assets/images/227642-2119x1415-Stressed-student-preparing-for-exam.jpg" class="profile-image" alt="Friend's photo">
-                            <span class="blue">Barack Jones</span> published post <span class="heavy">How to speed up your WordPress website</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-toggles">
+                        <div class="card purple center-aligned">
+                            <div class="quantity large bold">27</div>
+                            <div class="card-title">Asking Questions</div>
+                        </div>
+                        <div class="card gray-background center-aligned">
+                            <div class="quantity large bold">7</div>
+                            <div class="card-title">Answered Questions</div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <ol>
+                            <li>
+                                <div class="comment-metric">
+                                    <i class="far fa-comment" aria-hidden="true"></i>
+                                    <span class="quantity small" area-label="number of comments"
+                                    >12</span>
+                                </div>
+                                <a href="#" class="list-item-text">
+                                    How to make a good logo
+                                </a>
+                            </li>
+                            <li>
+                                <div class="comment-metric">
+                                    <i class="far fa-comment" aria-hidden="true"></i>
+                                    <span class="quantity small" area-label="number of comments">3</span>
+                                </div>
+                                <a href="#" class="list-item-text">
+                                    What are the best mobile apps for buying, analyzing, and selling stocks
+                                </a>
+                            </li>
+                            <li>
+                                <div class="comment-metric">
+                                    <i class="far fa-comment" aria-hidden="true"></i>
+                                    <span class="quantity small" area-label="number of comments">67</span>
+                                </div>
+                                <a href="#" class="list-item-text">
+                                    What's the difference between UI and UX
+                                </a>
+                            </li>
+                            <li>
+                                <div class="comment-metric">
+                                    <i class="far fa-comment" aria-hidden="true"></i>
+                                    <span class="quantity small" area-label="number of comments">0</span>
+                                </div>
+                                <a href="#" class="list-item-text">
+                                    What logos include hidden messages
+                                </a>
+                            </li>
+                        </ol>
+                        <a href="#" class="expand-list-button right-aligned bold small">
+                            Show more 
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
                         </a>
-                    </li>
-                </ol>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-toggles">
+                        <div class="card green center-aligned">
+                            <div class="quantity large bold">19</div>
+                            <div class="card-title">Following Exams</div>
+                        </div>
+                        <div class="card gray-background center-aligned">
+                            <div class="quantity large bold">88</div>
+                            <div class="card-title">Done Exams</div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <ol>
+                            <li>
+                                <div class="graph-bar">
+                                    <div class="bar">
+                                        <div class="bar-fill green-background" style="height: 72%;">
+                                            <span class="quantity small">72%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" class="list-item-text">Junior web designer</a>
+                            </li>
+                            <li>
+                                <div class="graph-bar">
+                                    <div class="bar">
+                                        <div class="bar-fill green-background" style="height: 20%;">
+                                            <span class="quantity small">20%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" class="list-item-text">Which is the best way to pass the PMP?</a>
+                            </li>
+                            <li>
+                                <div class="graph-bar">
+                                    <div class="bar">
+                                        <div class="bar-fill green-background" style="height: 35%;">
+                                            <span class="quantity small">35%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" class="list-item-text">What are great examples of viral UI/UX?</a>
+                            </li>
+                            <li>
+                                <div class="graph-bar">
+                                    <div class="bar">
+                                        <div class="bar-fill green-background" style="height: 100%;">
+                                            <span class="quantity small">100%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" class="list-item-text">Why is consistency important in design?</a>
+                            </li>
+                        </ol>
+                        <a href="#" class="expand-list-button right-aligned bold small">
+                            Show more 
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="card experience-gained">
+                    <div class="card-title bold gray">Experience gained</div>
+                    <div class="stats">
+                        <div class="graph-bar">
+                            <div class="bar gray-background">
+                                <div class="bar-fill green-background" style="height: 80%" aria-label="80%"></div>
+                            </div>
+                            <span class="uppercase">Course</span>
+                        </div>
+                        <div class="graph-bar">
+                            <div class="bar gray-background">
+                                <div class="bar-fill green-background" style="height: 30%" aria-label="30%"></div>
+                            </div>
+                            <div class="uppercase">Question</div>
+                        </div>
+                        <div class="graph-bar">
+                            <div class="bar gray-background">
+                                <div class="bar-fill green-background" style="height: 50%" aria-label="50%"></div>
+                            </div>
+                            <div class="uppercase">Exam</div>
+                        </div>
+                        <div class="last-month-experience">
+                            <div class="quantity bold green">
+                                +142
+                            </div>
+                            <div class="bold small uppercase">
+                                Last Month
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title bold gray">Experience per day</div>
+                    </div>
+                </div>
+                <div class="card friend-activity">
+                    <div class="card-title uppercase bold gray">Friend Activity</div>
+                    <div class="list">
+                        <ol>
+                            <li>
+                                <a href="#">
+                                    <div class="image-crop">
+                                        <img aria-hidden="true" src="assets/images/successful-college-student-lg.png" class="profile-image" alt="Jason Maroz" style="margin: 0px 0px 0px -10px;">
+                                    </div>
+                                    <span class="list-item-text">
+                                        <span class="blue">Jason Maroz</span> Finished the course <span class="heavy">Basics for UX Designers</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="image-crop">
+                                        <img src="assets/images/male-student-studying1-min.jpg" class="profile-image" alt="Mary Robinson" style="margin: 0px 0px 0px -10px;">
+                                    </div>
+                                    <span class="list-item-text">
+                                        <span class="blue">Mary Robinson</span> Asked question <span class="heavy">What is best grid for desktop web?</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="image-crop">
+                                        <img aria-hidden="true" src="assets/images/bay-college.jpeg" class="profile-image" alt="Joe Namos" style="margin: 0px 0px 0px -10px;">
+                                    </div>
+                                    <span class="list-item-text">
+                                        <span class="blue">Joe Namos</span> Finished the exam <span class="heavy">Junior web designer</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="image-crop">
+                                        <img aria-hidden="true" src="assets/images/227642-2119x1415-Stressed-student-preparing-for-exam.jpg" class="profile-image" alt="Friend's photo">
+                                    </div>
+                                    <span class="list-item-text">
+                                        <span class="blue">Barack Jones</span> published post <span class="heavy">How to speed up your WordPress website</span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
